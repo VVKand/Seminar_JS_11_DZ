@@ -1,0 +1,682 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@600;800&family=Roboto:wght@100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+nav {
+  background: #222222;
+  padding: 18px 231px 19px 240px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  gap: 41px;
+  align-items: center;
+}
+
+.nav__btn {
+  display: flex;
+  gap: 33px;
+  align-items: center;
+}
+
+.elps {
+  display: block;
+  position: relative;
+}
+.elps::before {
+  content: url(./img/Ellipse\ 2.png);
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+.elps::after {
+  content: url(./img/5.png);
+  position: absolute;
+  top: -10px;
+  right: -1px;
+}
+
+.conteiner {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu {
+  width: 232px;
+  height: 634px;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 32px 33px;
+}
+
+.menu__top {
+  margin-bottom: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.menu__list {
+  margin-bottom: 20px;
+}
+
+.menu__list h4 {
+  margin-bottom: 12px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #f16d7f;
+}
+
+.menu__list h5 {
+  margin-bottom: 11px;
+  margin-left: 22px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6f6e6e;
+}
+
+.banner {
+  display: flex;
+  position: relative;
+  background: hsl(351, 32%, 92%);
+  gap: 63px;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.banner h1 {
+  font-weight: 900;
+  font-size: 56px;
+  color: #222222;
+}
+
+.text_h3 {
+  display: flex;
+  font-weight: 700;
+  font-size: 32px;
+  color: #222222;
+}
+
+.text_pink {
+  color: #f16d7f;
+}
+
+.banner__txt {
+  padding-left: 16px;
+  align-items: center;
+  border-left: 12px solid #f16d7f;
+}
+
+.main__width {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.card__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+}
+
+.card {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.card h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
+.card__content {
+  position: absolute;
+  color: white;
+}
+
+.long__card__content {
+  position: absolute;
+  color: white;
+  width: 100%;
+  padding: 65px 0;
+}
+
+.fetured {
+  text-align: center;
+}
+
+.fetured h4 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+.fetured p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9f9f;
+  margin-bottom: 48px;
+}
+
+.sail__card__lst {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  text-align: left;
+}
+
+.sail__card {
+  background: #f8f8f8;
+  margin-bottom: 49px;
+}
+
+.sail__card h5 {
+  font-weight: 400;
+  font-size: 13px;
+  color: #000000;
+  margin-top: 25px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+.sail__card p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #5d5d5d;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  margin-right: 29px;
+}
+
+.sail__card h6 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f16d7f;
+  margin-left: 16px;
+  margin-bottom: 19px;
+}
+
+.card__hov {
+  display: block;
+  position: relative;
+}
+
+.card__hov:hover::after {
+  content: url(./img/Add\ to\ cart.png);
+  position: absolute;
+  top: 189px;
+  left: 112px;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.card__hov:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(58, 56, 56, 0.86);
+}
+
+.btn__list {
+  text-align: center;
+}
+
+.btn {
+  padding: 14px 39px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f26376;
+  border: 1px solid #ff6a6a;
+  margin-bottom: 96px;
+  background: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: #f16d7f;
+}
+
+.club__list {
+  background: #222224;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 103px 230px;
+  gap: 30px;
+}
+
+.club {
+  width: 360px;
+  text-align: center;
+}
+
+.club__img {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.club h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fbfbfb;
+  margin-bottom: 16px;
+}
+
+.club p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #fbfbfb;
+}
+
+.promo {
+  height: 448px;
+  background-image: url(./img/background_footer.jpg);
+  padding-left: 229px;
+  padding-right: 230px;
+}
+
+.promo__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.citata {
+  width: 360px;
+  height: 99px;
+  text-align: center;
+}
+
+.citata img {
+  margin: auto;
+  margin-top: 95px;
+  margin-bottom: 25px;
+}
+
+.citata h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #222224;
+}
+
+.subskribe {
+  width: 557px;
+  margin-top: 150px;
+}
+.subskribe h1 {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #222224;
+}
+
+.subskribe p {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #222224;
+  margin-bottom: 32px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  width: 256px;
+  height: 49px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #222224;
+  opacity: 0.67;
+  padding: 7px 22px 6px 64px;
+  background: #e1e1e1;
+  border: none;
+  border-radius: 30px 0 0 30px;
+}
+
+.input__button {
+  width: 100px;
+  height: 49px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 7px 8px 6px 7px;
+  background: #f16d7f;
+  border: none;
+  border-radius: 0 30px 30px 0;
+}
+
+.end__list {
+  background: #222224;
+  height: 79px;
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fbfbfb;
+  margin-left: 230px;
+  margin-top: 30px;
+}
+
+.vector__list {
+  display: flex;
+  gap: 8px;
+  margin-top: 27px;
+  margin-right: 230px;
+}
+
+.vector {
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vector:hover svg {
+  fill: white;
+}
+
+.vector:hover {
+  background: #f16d7f;
+}
+
+/* tablet 768px */
+@media (min-width: 767px) and (max-width: 1025px) {
+  .conteiner {
+    width: 768px;
+  }
+
+  nav {
+    background: #222222;
+    padding: 18px 32px 18px 36px;
+  }
+
+  .banner {
+    gap: 39px;
+  }
+
+  .banner h1 {
+    font-size: 44px;
+  }
+
+  .text_h3 {
+    font-size: 21px;
+  }
+
+  .img__bnr {
+    width: 386px;
+  }
+
+  .main__width {
+    width: 736px;
+  }
+
+  .fetured p {
+    margin-bottom: 73px;
+  }
+
+  .sail__card__lst {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  .club__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 48px;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .promo {
+    height: 693px;
+    background-size: auto 100%;
+    background-position: 25%;
+  }
+
+  .promo__list {
+    height: 448px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .citata img {
+    margin-top: 53px;
+    margin-bottom: 20px;
+  }
+
+  .subskribe {
+    width: 557px;
+    margin-top: 48px;
+  }
+  .copyright {
+    margin-left: 32px;
+  }
+  .vector__list {
+    margin-right: 34px;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 768px) {
+  .conteiner {
+    width: 375px;
+  }
+
+  .main__width {
+    width: 375px;
+  }
+
+  nav {
+    background: #222222;
+    padding: 18px 16px 19px 16px;
+  }
+
+  .hidden__mob {
+    display: none;
+  }
+
+  .banner {
+    padding-top: 148px;
+    padding-bottom: 148px;
+    justify-content: center;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+  }
+
+  .text_h3 {
+    font-size: 16px;
+  }
+
+  .card__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .card {
+    margin-bottom: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .card__asses {
+    width: 100%;
+    height: 143px;
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .card__asses img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 32px;
+  }
+
+  .long__card__content {
+    position: absolute;
+    color: white;
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .fetured {
+    margin-top: 64px;
+  }
+  .sail__card__lst {
+    width: 359px;
+    grid-template-columns: 1fr;
+    margin-bottom: 41px;
+    gap: 17px;
+  }
+
+  .sail__card {
+    margin: 0;
+  }
+
+  .club__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 48px;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+    padding-top: 48px;
+    padding-bottom: 81px;
+  }
+
+  .club {
+    width: 348px;
+  }
+  .promo {
+    height: 693px;
+    background-size: auto 100%;
+    background-position: 27%;
+    padding: 0;
+  }
+
+  .promo__list {
+    height: 550px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .citata img {
+    margin-top: 53px;
+    margin-bottom: 20px;
+  }
+
+  .subskribe {
+    width: 375px;
+    margin-top: 48px;
+  }
+
+  .copyright {
+    margin-left: 0;
+    width: 375px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .copyright h1 {
+    font-size: 16px;
+  }
+
+  .vector__list {
+    margin-right: 34px;
+  }
+
+  .end__list {
+    height: 100%;
+  }
+
+  .end {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .vector__list {
+    width: 375px;
+    margin-top: 43px;
+    justify-content: center;
+  }
+}
