@@ -447,6 +447,77 @@ nav {
   background: #f16d7f;
 }
 
+
+/* корзина начало */
+
+.korz__img img {
+  height: 306px;
+}
+
+ .korz__card {
+   width: 652px;
+   height: 306px;
+   margin-left: 230px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: flex;
+   gap: 31px;
+   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+ }
+ 
+ .korz__content {
+   display: block;
+   position: relative;
+   width: 390px;
+   height: 302px;
+   
+ }
+ 
+ .korz__content h2 {
+   margin-top: 22px;
+   margin-bottom: 42px;
+   width: 262px;
+   font-weight: 400;
+   font-size: 24px;
+   color: #222222;
+ }
+ 
+ .cont_par {
+   margin-bottom: 6px;
+   font-weight: 400;
+   font-size: 22px;
+   color: #575757;
+ }
+ 
+ .korz__price {
+   color: #EF5B70;
+ }
+ 
+ .dop {
+   color: #6F6E6E;
+ }
+ 
+ .clouse {
+  background: none;
+  border: none;
+   position: absolute;
+   top: 28px;
+   right: 22px;
+ }
+ 
+ .korz__content input {
+   width: 43px;
+   height: 24px;
+   margin-left: 24px;
+   text-align: end;
+   font-weight: 400;
+   font-size: 18px;
+   color: #575757;
+   border: 1px solid #eaeaea;
+ }
+  
+/* корзина конец */
+
 /* tablet 768px */
 @media (min-width: 767px) and (max-width: 1025px) {
   .conteiner {
